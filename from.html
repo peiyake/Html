@@ -1,0 +1,68 @@
+<html>
+<head>
+  <title>表单 from</title>
+</head>
+<body>
+<dl>
+<dt>表单概念</dt>
+<dd>表单区域用来搜集用户的输入数据，并可以提交给服务器</dd>
+<dt>input标签</dt>
+<dd>文本栏:type="text" </dd>
+<dd>密码栏:type="password" </dd>
+<dd>隐藏性栏位:type="hidden" </dd>
+<dd>多重勾选的栏位:type="checkbox" </dd>
+<dd>单选框:type="radio" </dd>
+<dd>单选和多选按钮在使用时,通过设置相同的name属性来表示一个组 </dd>
+<dd>上传文件：type="file"</dd>
+<dd>提交按钮：type="submit" value属性表示按钮显示的名字</dd>
+<dd>复位按钮：type="reset" value 表示按钮显示的名字</dd>
+<dt>例子</dt>
+<dd>
+  <from>
+    输入框：<input type="text" name="t1" value="piak"/><br />
+    密码框：<input type="password" name="t2" value="piak"/><br />
+    隐藏框：<input type="hidden" name="t3" value="piak"/><br />
+    上传：<input type="file" name="t4"/><br />
+    <br />
+    <br />
+    <input type="submit" value="提交"/>
+    <button type="reset" value="fuwei">复位</button>
+    <br />
+    多选框：
+    <br />
+    <p>下列哪些城市属于中国的？</p>
+    <input type="checkbox" name="city" value="上海"/>上海<br />
+    <input type="checkbox" name="city" value="北京"/>北京<br />
+    <input type="checkbox" name="city" value="伦敦"/>伦敦<br />
+    <input type="checkbox" name="city" value="长沙"/>长沙<br />
+    <input type="checkbox" name="city" value="纽约"/>纽约<br />
+    <br />
+    单选框：
+    <p>您的性别?</p>
+    <input type="radio" name="six" value="男" checked="checked"/>男<br />
+    <input type="radio" name="six" value="女"/>女<br />
+  </from>
+</dd>
+<dt>下拉菜单select</dt>
+<dd>select标签生成一个下拉框，下拉框内各个选项使用option标签表示,size表示下拉框中可见option的个数</dd>
+<dt>例子</dt>
+<dd>
+    <select name="city" size="1">
+    <optgroup label="shanghai">
+    <option name="hanghai" selected="selected">徐汇区</option>
+    <option name="shanghai">嘉定区</option>
+    <option name="shanghai">闵行区</option>
+    <option name="shanghai">奉贤区</option>
+
+    </optgroup>
+    <optgroup label="北京">
+    <option name="hanghai">海淀区</option>
+    <option name="shanghai">丰台区</option>
+    <option name="shanghai">中南海</option>
+    <option name="shanghai">天安门</option>
+    </optgroup>
+    </select>
+</dd>
+</dl>
+</body>
+</html>
